@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    background-color: rgb(12, 10, 56);
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+.container {
+    font-family: 'Raleway', sans-serif;
+}
+header {
+    display: grid;
+    grid-template-columns: auto 1fr max-content;
+    align-items: center; 
+    padding: 1rem;
+    gap: 1rem;
+    background-color: #0c0a38;
+    margin-left: 500px;
+    margin-right: 500px;
+  }
+  #add-task {
+    height: 80px;
+    width: 250px;
+    border: none;
+    border-radius: 50px;
+    font-size: 42px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 10px;
+  }
+  #add-task:active {
+    transition: 0.2s ease;
+    height: 75px;
+    width: 245px;
+  }
+  #add-task:hover{
+    transition: 0.1s ease;
+    background-color: rgb(220, 218, 218);
+  }
+  h1 {
+    font-size: 50px;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    z-index: 1000;
+    font-size: 18px;
+  }
+  
+  footer a {
+    color: #00bfff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+  }
+  
+  footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  
