@@ -1,3 +1,2 @@
-# Task Tracker App
-## UNDER DEVELOPMENT - EXPECTED DATE OF V1 RELEASE IS AUGUST 20 2025
-Lol this is just for me to learn JavaScript
+# Very Simple Vanilla JS Task Tracker App
+I'm building this to learn JavaScript
