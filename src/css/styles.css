@@ -18,13 +18,42 @@ body {
   max-width: 900px;
   margin: 0 auto;
   padding: 1rem;
+  box-sizing: border-box;
+
 }
 
+#addTaskBtn {
+  width: 10%;
+  min-width: 80px;
+  max-width: 150px;
+  border-radius: 7px;
+  background-color: #4169e1;
+  height: 45px;
+  color: white;
+  border: none;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  #addTaskBtn {
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+  }
+}
+
+#addTaskBtn:hover {
+  transition: 0.3s ease;
+  background-color: #0f3abc;
+}
+
+#addTaskBtn:active {
+  width: 8%;
+  height: 35px;
+}
 header {
-  display: grid;
-  grid-template-columns: auto 1fr max-content;
-  align-items: center;
-  gap: 1rem;
+ text-align: center;
   background-color: #0c0a38;
   padding: 1rem;
 }
@@ -46,15 +75,7 @@ h1 {
   transition: all 0.2s ease;
 }
 
-#add-task:hover {
-  background-color: rgb(220, 218, 218);
-  color: #0c0a38;
-}
 
-#add-task:active {
-  height: 65px;
-  width: 215px;
-}
 
 footer {
   position: fixed;
@@ -84,14 +105,43 @@ footer a:hover {
 
 @media (max-width: 600px) {
   header {
-    grid-template-columns: 1fr;
     text-align: center;
     gap: 0.5rem;
+    margin: 0;
+  }
+
+}
+
+@media (max-width: 600px) {
+  header {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
   }
 
   #add-task {
     width: 100%;
-    height: 50px;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
+}
+
+input {
+  height: 45px;
+  width: 80%;
+  padding: 5px;
+  color: white;
+  margin-bottom: 10px;
+  border: none;
+  background-color: #4169e1;
+  font-family: 'Raleway', sans-serif;
+  border-radius: 7px;
+}
+
+input::placeholder {
+  color: white;
+  font-family: 'Raleway', sans-serif;
 }
