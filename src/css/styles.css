@@ -2,58 +2,58 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   background-color: rgb(12, 10, 56);
   font-family: 'Raleway', sans-serif;
   color: white;
-  margin: 0;
-  padding: 0;
+  line-height: 1.6;
+  font-size: 16px;
 }
 
 .container {
-  font-family: 'Raleway', sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 header {
   display: grid;
   grid-template-columns: auto 1fr max-content;
-  align-items: center; 
-  padding: 1rem;
+  align-items: center;
   gap: 1rem;
   background-color: #0c0a38;
-
-  max-width: 900px; 
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
-
-#add-task {
-  height: 80px;
-  width: 250px;
-  border: none;
-  border-radius: 50px;
-  font-size: 42px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-}
-
-#add-task:active {
-  transition: 0.2s ease;
-  height: 75px;
-  width: 245px;
-}
-
-#add-task:hover {
-  transition: 0.1s ease;
-  background-color: rgb(220, 218, 218);
+  padding: 1rem;
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+#add-task {
+  height: 70px;
+  width: 220px;
+  border: none;
+  border-radius: 50px;
+  font-size: 2rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#add-task:hover {
+  background-color: rgb(220, 218, 218);
+  color: #0c0a38;
+}
+
+#add-task:active {
+  height: 65px;
+  width: 215px;
 }
 
 footer {
@@ -65,7 +65,8 @@ footer {
   text-align: center;
   padding: 15px 0;
   z-index: 1000;
-  font-size: 18px;
+  font-size: 0.95rem;
+  background-color: #0c0a38;
 }
 
 footer a {
