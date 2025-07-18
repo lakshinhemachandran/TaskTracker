@@ -148,3 +148,14 @@ input::placeholder {
 li {
   list-style: none;
 }
+.delete {
+    width: 10%;
+  min-width: 80px;
+  max-width: 150px;
+  border-radius: 7px;
+  background-color: #4169e1;
+  height: 45px;
+  color: white;
+  border: none;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+}
